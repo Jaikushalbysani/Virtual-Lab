@@ -85,7 +85,7 @@ const Navbar = () => {
         >
           <Link to="#">About</Link>
           <div className={`dropdown-content ${isAboutDropdownOpen ? 'show' : ''}`}>
-            <Link to="/virtual-labs">Virtual Labs</Link>
+            <Link to="/Virtual-labs">Virtual Labs</Link>
             <Link to="/vlead">VLEAD</Link>
           </div>
         </div>
