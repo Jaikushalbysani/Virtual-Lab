@@ -47,6 +47,11 @@ const Home = () => {
             </button>
         </div>
     </div>
+
+      <div className="headline">
+        <h1>Let's Explore, Experiment and Discover !</h1>
+      </div>
+      
     </div>
   );
 };
