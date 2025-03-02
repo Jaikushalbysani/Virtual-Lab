@@ -67,7 +67,7 @@ const Navbar = () => {
   const handleAnalyticsMouseLeave = () => {
     analyticsTimeoutRef.current = setTimeout(() => {
       setIsAnalyticsDropdownOpen(false);
-    }, 100);
+    }, 150);
   };
 
   return (
