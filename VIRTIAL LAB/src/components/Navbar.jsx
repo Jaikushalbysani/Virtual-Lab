@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
       <div className={`nav-links ${isOpen ? 'active' : ''}`}>
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Link to="/about">fucku</Link>
         <Link to="/events">Events</Link>
         <Link to="/schedule">kushal</Link>
         <Link to="/login" style={{ textDecoration: 'none' }}>
