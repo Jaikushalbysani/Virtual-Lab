@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import './Events.css';
+import './Iam.css';
 import { Link } from 'react-router-dom';
 const event = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1735380954/cmgsoon_bo9wmm.png';
 const footer = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1735379767/footer_cvrjgz.png';
 
 
-const Events = () => {
+const Iam = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     
@@ -469,4 +469,4 @@ const Events = () => {
   );
 };
 
-export default Events; 
+export default Iam; 

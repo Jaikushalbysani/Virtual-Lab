@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './ForgotPassword.css';
+import './Analytics.css';
 
-const ForgotPassword = () => {
+const Analytics = () => {
   const [email, setEmail] = useState('');
 
   const handleChange = (e) => {
@@ -32,4 +32,4 @@ const ForgotPassword = () => {
   );
 };
 
-export default ForgotPassword; 
+export default Analytics; 
