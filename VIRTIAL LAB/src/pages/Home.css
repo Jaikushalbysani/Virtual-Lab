@@ -58,9 +58,9 @@ spline-viewer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -900px;
+  margin-top: -1050px;
   background: none;
-  height:800px;
+  height:1000px;
 }
 
 html.lenis {
