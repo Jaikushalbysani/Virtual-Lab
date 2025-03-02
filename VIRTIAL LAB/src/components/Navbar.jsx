@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-const logo = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1735379774/logo_eb61r7.png';
+const logo = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1740921252/icon_o7p77j.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,21 +16,12 @@ const Navbar = () => {
         <img src={logo} alt="Surabhi Logo" />
       </div>
       <div className="hamburger" onClick={toggleMenu}>
-        <span></span>
-        <span></span>
-        <span></span>
       </div>
       <div className={`nav-links ${isOpen ? 'active' : ''}`}>
-        <Link to="/">sexy</Link>
-        <Link to="/about">fucku</Link>
-        <Link to="/events">Karthikeya</Link>
-        <Link to="/schedule">kushal</Link>
-        <Link to="/login" style={{ textDecoration: 'none' }}>
-          <button className="login-button">LOGIN</button>
-        </Link>
-        <Link to="/register" style={{ textDecoration: 'none' }}>
-          <button className="reg-button">REGISTER</button>
-        </Link>
+        <Link to="/">About</Link>
+        <Link to="/about">I am</Link>
+        <Link to="/events">I want to</Link>
+        <Link to="/schedule">Analytics</Link>
       </div>
     </nav>
   );
