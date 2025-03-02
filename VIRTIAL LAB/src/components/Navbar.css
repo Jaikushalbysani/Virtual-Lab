@@ -14,15 +14,12 @@
 .nav-logo {
   position: absolute;
   left: 1rem;
-  /* Keep the logo on the left */
   background: none;
 }
 
 .nav-logo img {
   width: 40px;
-  /* Adjust the size of the logo image to match other elements */
   height: 40px;
-  /* Ensure the height is also set to match other elements */
   background: none;
 }
 
@@ -34,7 +31,7 @@
   backdrop-filter: blur(15px);
   margin-right: -40px;
   border-radius: 40px;
-  color:#000000;
+  color: #000000;
   padding: 18px 45px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
@@ -51,7 +48,6 @@
   letter-spacing: 2px;
   transition: 0.5s;
 }
-
 
 .hamburger {
   display: none;
@@ -121,9 +117,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 10px;
-  /* Add rounded edges to the dropdown */
   margin-top: 25px;
-  /* Add space between navbar elements and dropdown box */
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease;
