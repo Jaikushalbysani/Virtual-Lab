@@ -1,0 +1,22 @@
+.sch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap:50px;
+    margin-bottom: 200px;
+}
+.sch img{
+    width:1200px;
+    transition: 0.5s;
+}
+.sch img:hover{
+    transform: rotate3d(-1, 1, 0, 20deg);
+    transition: 0.5s;
+}
+@media screen and (max-width: 550px){
+    .sch img{
+        width: 380px;
+    }
+}

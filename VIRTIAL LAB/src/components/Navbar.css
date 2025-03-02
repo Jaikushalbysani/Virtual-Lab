@@ -1,0 +1,145 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    background: none;
+    z-index: 1000;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background: rgba(4, 4, 4, 0.327);
+    backdrop-filter: blur(15px);
+    margin-right: -40px;
+    border-radius: 40px;
+    padding: 10px 12px;
+    box-shadow: 
+    0 0 102px #9200ba73,
+    0 0 151px #9200ba97;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    background: none;
+    margin-left: 10px;
+    transition: 0.5s ;
+  }
+  
+  .nav-links a:hover {
+    letter-spacing: 4px;
+    transition: 0.5s ;
+  }
+  
+  .login-button {
+    background: #691fa2;
+    color: #000000;
+    border: 2px solid #691fa2;
+    padding: 0.7rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    width:120px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    font-family: "Kalnia";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login-button:hover{
+    background: #691fa246;
+    color:#691fa2;
+    border: 2px solid #691fa2;
+  }
+  .reg-button {
+    background: #691fa246;
+    color: #691fa2;
+    border: 2px solid #691fa2;
+    padding: 0.7rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    margin-left: -50px;
+    width:120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kalnia";
+  }
+  .reg-button:hover{
+    background: #691fa2;
+    color:#000;
+  }
+
+  
+  .nav-logo img{
+    width: 120px;
+    background: none;
+  }
+  .nav-logo{
+    background: none;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff; 
+    transition: all 0.3s ease;
+  }
+
+  @media screen and (max-width: 650px) {
+    .navbar {
+      position: relative;
+      padding: 1rem;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background-color: #000000; 
+      padding: 1rem 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .nav-links Link {
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .nav-links button {
+      margin: 0.2rem auto;
+    }
+  }

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.register-container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 
+  0 0 200px #9200ba68;
+  transition: 0.5s;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  margin-top: 50px;
+}
+.register-container:hover{
+  box-shadow: 
+  0 0 500px #9200bab8;
+}
+
+h2 {
+  text-align: center;
+
+}
+
+p {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+  padding: 18px;
+  margin: 10px 0;
+  border: 1.5px solid #691fa2;
+  border-radius: 40px;
+  font-size: 16px;
+  width: 100%;
+  background-color: #000;
+  color: #646464;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+input::placeholder, select::placeholder {
+  color: #646464;
+  font-family: 'Poppins', sans-serif;
+}
+
+.register-container button{
+  font-family: "Kalnia";
+  margin-top: 50px;
+  width:40%;
+  padding:15px;
+  border:2px solid #691fa2;
+  background: #691fa276;
+  font-size: 17px;
+  border-radius:30px;
+  color:#691fa2;
+}
+
+
+.register-container h2{
+  color:#691fa2;
+  font-family: "Kalnia";
+  font-weight: 500;
+}
+.register-container p{
+  margin-bottom: 60px;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 40px;
+}
