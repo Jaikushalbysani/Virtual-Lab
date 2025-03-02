@@ -6,6 +6,8 @@ import About from './pages/About';
 import Iam from './pages/Iam';
 import Iwanto from './pages/Iwanto';   
 import Analytics from './pages/Analytics';
+import Virtuallabs from './pages/Virtual-labs';
+import Vlead from './pages/Vlead';
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
           <Route path="/events" element={<Iam />} />
           <Route path="/login" element={<Iwanto />} />
           <Route path="/eventslist" element={<Analytics />} />
+          <Route path="/Virtual-labs" element={<Virtuallabs />} />
+          <Route path="/Vlead" element={<Vlead />} />
         </Routes>
       </div>
     </Router>
