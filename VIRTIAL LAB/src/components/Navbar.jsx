@@ -24,7 +24,7 @@ const Navbar = () => {
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/events">Events</Link>
-        <Link to="/schedule">Schedules</Link>
+        <Link to="/schedule">kushal</Link>
         <Link to="/login" style={{ textDecoration: 'none' }}>
           <button className="login-button">LOGIN</button>
         </Link>
