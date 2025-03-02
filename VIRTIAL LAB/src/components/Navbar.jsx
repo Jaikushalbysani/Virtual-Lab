@@ -21,7 +21,7 @@ const Navbar = () => {
         <span></span>
       </div>
       <div className={`nav-links ${isOpen ? 'active' : ''}`}>
-        <Link to="/">Home</Link>
+        <Link to="/">sexy</Link>
         <Link to="/about">fucku</Link>
         <Link to="/events">Karthikeya</Link>
         <Link to="/schedule">kushal</Link>
