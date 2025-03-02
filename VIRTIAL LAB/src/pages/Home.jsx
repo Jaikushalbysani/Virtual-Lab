@@ -4,7 +4,6 @@ import './Home.css';
 import Lenis from '@studio-freight/lenis';
 
 
-
 const Home = () => {
   
 
@@ -37,6 +36,8 @@ const Home = () => {
   return (
     
     <div className="home-container">
+        <div id="cursor"></div>
+        <div class="background"></div>
       <div className="spline">
         <spline-viewer url="https://prod.spline.design/4UjWcx5AakVFB4YG/scene.splinecode"></spline-viewer>
       </div>
@@ -50,6 +51,10 @@ const Home = () => {
 
       <div className="headline">
         <h1>Let's Explore, Experiment and Discover !</h1>
+      </div>
+
+      <div className="para">
+        <p>The Virtual Labs Engineering, Architecture, and Design (VLEAD) Team at IIIT Hyderabad optimizes Virtual Labs operations, including infrastructure management, system administration, user interface design, process coordination, analytics, automation, performance, security enhancements, content authoring tool development, and technology research. Their efforts ensure efficiency and a seamless learning experience.</p>
       </div>
       
     </div>
