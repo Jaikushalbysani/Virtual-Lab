@@ -96,7 +96,7 @@ const Navbar = () => {
         >
           <Link to="#">I am</Link>
           <div className={`dropdown-content ${isIAmDropdownOpen ? 'show' : ''}`}>
-            <Link to="#">a Learner</Link>
+            <Link to="/Learner">a Learner</Link>
             <Link to="#">a Facilitator</Link>
             <Link to="#">a Creator</Link>
           </div>
