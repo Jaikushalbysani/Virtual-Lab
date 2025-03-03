@@ -8,11 +8,11 @@ const Iwanto = () => {
   return (
     <div className="Iwanto-container">
       <div className="alllist">
-        <img src={alleve} alt="" className="alleve" />          
+        <img src={alleve} alt="" className="alleve" />
       </div>
 
       <div className="alllistm">
-       <img src={allevemob} alt="" className="allevemob" />    
+        <img src={allevemob} alt="" className="allevemob" />
       </div>
 
       <div className="footer">
