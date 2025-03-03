@@ -3,6 +3,19 @@ import './Virtual-labs.css';
 
 const b1 = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1740943251/b1_ellruo.jpg';
 
+
+const i1 = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1741007684/i1_lc1hzx.jpg';
+const i2 = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1741007684/i2_ebv3iw.jpg';
+const i3 = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1741007685/i3_pifuwc.jpg';
+const i4 = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1741007684/i4_fd1qi4.png';
+const i5 = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1741007684/i5_gufddd.png';
+const i6 = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1741007683/i6_dt1fmw.png';
+const i7 = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1741007683/i7_xdtpiw.png';
+const i8 = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1741007683/i9_xleid4.jpg';
+const i9 = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1741007683/i9_xleid4.jpg';
+const i10 = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1741007683/i10_recwdq.png';
+const i11 = 'https://res.cloudinary.com/ds18h1q0k/image/upload/v1741007683/i12_tdigpo.jpg';
+
 const Virtuallabs = () => {
   const [activeTab, setActiveTab] = useState('overview');
 
@@ -13,15 +26,102 @@ const Virtuallabs = () => {
     },
     goals: {
       title: "Goals and Philosophy",
-      content: "To offer a remote learning experience with simulated experiments in diverse areas of Science and Engineering.To engage students by sparking their curiosity, allowing them to learn fundamental and complex concepts through remote experimentation.To present a complete Learning Management System around the Virtual Labs, where students and teachers can utilize various tools for learning, including supplemental web-resources, video-lectures, animated demonstrations, and self-evaluation.PhilosophyBridging the gap for colleges that lack lab facilities: Provide online labs as a substitute for hands-on lab work in engineering colleges that do not have the necessary equipment.Enhancing existing labs with online resources: Expand the capabilities of existing labs with online labs to complement and augment the learning experience of engineering students.Empowering educators through specialized workshops: Offer workshops on-site or online to enhance the skill set and proficiency of educators in the effective use of online labs in engineering education."
+      content: (
+        <div>
+          <h3>Goals</h3>
+          <ul>
+            <li>To offer a remote learning experience with simulated experiments in diverse areas of Science and Engineering.</li>
+            <li>To engage students by sparking their curiosity, allowing them to learn fundamental and complex concepts through remote experimentation.</li>
+            <li>To present a complete Learning Management System around the Virtual Labs, where students and teachers can utilize various tools for learning, including supplemental web-resources, video-lectures, animated demonstrations, and self-evaluation.</li>
+          </ul>
+
+          <h3>Philosophy</h3>
+          <ul>
+            <li>Bridging the gap for colleges that lack lab facilities: Provide online labs as a substitute for hands-on lab work in engineering colleges that do not have the necessary equipment.</li>
+            <li>Enhancing existing labs with online resources: Expand the capabilities of existing labs with online labs to complement and augment the learning experience of engineering students.</li>
+            <li>Empowering educators through specialized workshops: Offer workshops on-site or online to enhance the skill set and proficiency of educators in the effective use of online labs in engineering education.</li>
+          </ul>
+        </div>
+      )
     },
     institutes: {
       title: "Participating Institutes",
-      content: "We collaborate with leading institutions across the country to develop and maintain virtual laboratories."
+      content: (
+        <div className="institutes-grid">
+          <div className="institute-card">
+            <img src={i1} alt="Amrita Vishwa Vidyapeetham" />
+            <h3>AMRITA VISHWA VIDYAPEETHAM</h3>
+          </div>
+          <div className="institute-card">
+            <img src={i2} alt="COE Pune" />
+            <h3>COE PUNE</h3>
+          </div>
+          <div className="institute-card">
+            <img src={i3} alt="Dayalbagh Educational Institute" />
+            <h3>DAYALBAGH EDUCATIONAL INSTITUTE</h3>
+          </div>
+          <div className="institute-card">
+            <img src={i4} alt="IIT Bombay" />
+            <h3>IIT BOMBAY</h3>
+          </div>
+          <div className="institute-card">
+            <img src={i5} alt="IIT Delhi" />
+            <h3>IIT DELHI</h3>
+          </div>
+          <div className="institute-card">
+            <img src={i6} alt="IIT Guwahati" />
+            <h3>IIT GUWAHATI</h3>
+          </div>
+          <div className="institute-card">
+            <img src={i7} alt="IIT Kanpur" />
+            <h3>IIT KANPUR</h3>
+          </div>
+          <div className="institute-card">
+            <img src={i8} alt="IIT Kharagpur" />
+            <h3>IIT KHARAGPUR</h3>
+          </div>
+          <div className="institute-card">
+            <img src={i9} alt="IIT Roorkee" />
+            <h3>IIT ROORKEE</h3>
+          </div>
+          <div className="institute-card">
+            <img src={i10} alt="IIIT Hyderabad" />
+            <h3>IIIT HYDERABAD</h3>
+          </div>
+          <div className="institute-card">
+            <img src={i11} alt="NIT Karnataka" />
+            <h3>NIT KARNATAKA</h3>
+          </div>
+
+        </div>
+      )
     },
     testimonials: {
       title: "Testimonials",
-      content: "Read what our users say about their Virtual Labs experience."
+      content: (
+        <div className="testimonials-container">
+          <div className="testimonial-card">
+            <p>"Virtual Labs has revolutionized my learning experience. The simulations are incredibly detailed and helped me understand complex concepts that were difficult to grasp through textbooks alone."</p>
+            <h4>- Dr. Sarah Chen</h4>
+            <p className="designation">Professor, Chemical Engineering</p>
+          </div>
+          <div className="testimonial-card">
+            <p>"As a student from a small college with limited lab facilities, Virtual Labs has been a game-changer. I can now perform experiments and learn at my own pace from anywhere."</p>
+            <h4>- Rahul Sharma</h4>
+            <p className="designation">B.Tech Student</p>
+          </div>
+          <div className="testimonial-card">
+            <p>"The platform's user-friendly interface and comprehensive learning materials make it an invaluable resource for both teachers and students. It's truly bridging the educational gap."</p>
+            <h4>- Dr. Michael Rodriguez</h4>
+            <p className="designation">Department Head, Electronics</p>
+          </div>
+          <div className="testimonial-card">
+            <p>"Virtual Labs has enabled us to continue practical learning even during the pandemic. The quality of simulations and the support provided are exceptional."</p>
+            <h4>- Prof. Priya Patel</h4>
+            <p className="designation">Associate Professor, Physics</p>
+          </div>
+        </div>
+      )
     },
     faq: {
       title: "FAQ",

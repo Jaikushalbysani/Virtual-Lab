@@ -8,7 +8,7 @@ import Iwanto from './pages/Iwanto';
 import Analytics from './pages/Analytics';
 import Virtuallabs from './pages/Virtual-labs';
 import Vlead from './pages/Vlead';
-
+import Learner from './pages/Learner';
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
           <Route path="/eventslist" element={<Analytics />} />
           <Route path="/Virtual-labs" element={<Virtuallabs />} />
           <Route path="/Vlead" element={<Vlead />} />
+          <Route path="/Learner" element={<Learner />} />
         </Routes>
       </div>
     </Router>
