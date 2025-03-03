@@ -18,8 +18,9 @@
 }
 
 .nav-logo img {
-  width: 40px;
-  height: 40px;
+  margin-top: 10px;
+  width: 100px;
+  height: 70px;
   background: none;
 }
 
@@ -135,7 +136,7 @@
 }
 
 .nav-links .dropdown-content a:hover {
-  color: #a06d99;
+  color: #0073FF;
   border-radius: 10px;
 }
 
