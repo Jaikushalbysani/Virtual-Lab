@@ -85,8 +85,8 @@ const Navbar = () => {
         >
           <Link to="#">About</Link>
           <div className={`dropdown-content ${isAboutDropdownOpen ? 'show' : ''}`}>
-            <Link to="/Virtual-labs">Virtual Labs</Link>
-            <Link to="/Vlead">VLEAD</Link>
+            <Link to="/virtual-labs">Virtual Labs</Link>
+            <Link to="/vlead">VLEAD</Link>
           </div>
         </div>
         <div
@@ -108,10 +108,10 @@ const Navbar = () => {
         >
           <Link to="#">I want to</Link>
           <div className={`dropdown-content ${isIWantToDropdownOpen ? 'show' : ''}`}>
-            <Link to="#">Create Experiment</Link>
-            <Link to="#">Start Learning</Link>
-            <Link to="#">Host Workshop</Link>
-            <Link to="#">Explore Research</Link>
+            <Link to="/create-experiment">Create Experiment</Link>
+            <Link to="/start-learning">Start Learning</Link>
+            <Link to="/host-workshop">Host Workshop</Link>
+            <Link to="/explore-research">Explore Research</Link>
           </div>
         </div>
         <div
