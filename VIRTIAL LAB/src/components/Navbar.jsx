@@ -73,9 +73,12 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-logo">
-        <img src={logo} alt="Surabhi Logo" />
+        <Link to="/">
+          <img src={logo} alt="Surabhi Logo" />
+        </Link>
       </div>
       <div className="hamburger" onClick={toggleMenu}>
+        {/* Add hamburger icon here */}
       </div>
       <div className={`nav-links ${isOpen ? 'active' : ''}`}>
         <div

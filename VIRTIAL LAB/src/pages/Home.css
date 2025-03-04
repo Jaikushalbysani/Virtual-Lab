@@ -1,33 +1,41 @@
 @import url('https://fonts.cdnfonts.com/css/century-gothic');
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
-}
-body::-webkit-scrollbar {
-    display: none;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 
-.spline{
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.spline {
   margin-top: 80px;
 }
 
 .spline {
-    width: 100%;
-    height: 100vh;
-    background: none;
-    position: relative;
-    z-index: 1;
-    will-change: transform;
-    transform: translateZ(0);
+  width: 100%;
+  height: 100vh;
+  background: none;
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 /* Add loading state styles */
-.spline > div:first-child {
-    width: 100%;
-    height: 100%;
+.spline>div:first-child {
+  width: 100%;
+  height: 100%;
 }
 
 .parent {
@@ -54,33 +62,33 @@ body::-webkit-scrollbar {
   font-size: 10px;
 }
 
-.headline h1{
-  color:black;
+.headline h1 {
+  color: black;
   font-family: "poppins";
   font-weight: 800;
-  width:900px;
+  width: 900px;
   line-height: 70px;
   letter-spacing: -3px;
 }
 
-.headline{
+.headline {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: -1050px;
   background: none;
-  height:1000px;
+  height: 1000px;
 }
 
-.para{
+.para {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 100px;
 }
 
-.para p{
-  width:70%;
+.para p {
+  width: 70%;
   text-align: center;
   font-size: 20px;
   line-height: 40px;
@@ -214,7 +222,7 @@ html.lenis {
 
 /* Icons and Patterns */
 .icon-grid {
-  background: 
+  background:
     linear-gradient(45deg, #000 25%, transparent 25%),
     linear-gradient(-45deg, #000 25%, transparent 25%),
     linear-gradient(45deg, transparent 75%, #000 75%),
@@ -253,14 +261,14 @@ html.lenis {
 
 .learning-spheres::after {
   right: 0;
-  width:350px;
+  width: 350px;
   background: linear-gradient(to right, rgba(74, 20, 145, 0), rgb(241 245 249));
   z-index: 9999;
 }
 
 .learning-spheres::before {
   left: 0;
-  width:350px;
+  width: 350px;
   background: linear-gradient(to left, rgba(182, 182, 182, 0), rgb(241 245 249));
   z-index: 9999;
 }
@@ -275,32 +283,33 @@ html.lenis {
 }
 
 /* Optimize performance */
-.card-container, .card {
+.card-container,
+.card {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.activities{
+.activities {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.activities h3{
+.activities h3 {
   font-size: 50px;
   letter-spacing: -3px;
 }
 
-.boxs{
+.boxs {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:40px;
+  gap: 40px;
 }
 
-.b1{
-  padding:20px;
+.b1 {
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -310,17 +319,17 @@ html.lenis {
   transition: 0.8s;
 }
 
-.b1 h4{
+.b1 h4 {
   font-size: 18px;
   font-weight: 500;
 }
 
-.b1 img{
+.b1 img {
   border-radius: 25px;
-  width:350px;
+  width: 350px;
 }
 
-.b1:hover{
+.b1:hover {
   transform: rotate3d(-1, 1, 0, 22deg);
   transition: 0.5s;
 }
@@ -348,8 +357,7 @@ html.lenis {
   }
 }
 
-@media screen and (max-width: 550px) {
-  }
+@media screen and (max-width: 550px) {}
 
 .footer {
   background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
@@ -463,3 +471,24 @@ html.lenis {
   flex-direction: column;
 }
 
+.home-container.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body.dark-mode .dark-mode-toggle {
+  background-color: #000000;
+  color: #ffffff;
+}

@@ -65,6 +65,7 @@ const Home = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
+  const [darkMode, setDarkMode] = useState(false);
   const sliderRef = useRef(null);
   const containerRef = useRef(null);
 
@@ -94,7 +95,7 @@ const Home = () => {
     const cards = sliderRef.current.children;
     const cardWidth = cards[0].offsetWidth;
     const totalWidth = cardWidth * cards.length;
-    
+
     // Clone cards for infinite effect
     const cardsToClone = Array.from(cards).slice(0, 5);
     cardsToClone.forEach(card => {
@@ -111,12 +112,12 @@ const Home = () => {
         maxX: 0
       },
       edgeResistance: 0.65,
-      onDrag: function() {
+      onDrag: function () {
         // Check if we need to loop
-        if (this.x <= -totalWidth/2) {
-          this.x += totalWidth/2;
+        if (this.x <= -totalWidth / 2) {
+          this.x += totalWidth / 2;
         } else if (this.x >= 0) {
-          this.x -= totalWidth/2;
+          this.x -= totalWidth / 2;
         }
       }
     });
@@ -149,19 +150,24 @@ const Home = () => {
     sliderRef.current.scrollLeft = scrollLeft - walk;
   };
 
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle('dark-mode', !darkMode);
+  };
+
   return (
-    <div className="home-container">
-        <div id="cursor"></div>
+    <div className={`home-container ${darkMode ? 'dark' : ''}`}>
+      <div id="cursor"></div>
       <div className="spline">
         <spline-viewer url="https://prod.spline.design/4UjWcx5AakVFB4YG/scene.splinecode"></spline-viewer>
       </div>
-      <div class="parent">
-        <div class="watermark">
-            <button>
-                L E T ' S&nbsp;&nbsp;&nbsp;&nbsp; S T A R T
-            </button>
+      <div className="parent">
+        <div className="watermark">
+          <button>
+            L E T ' S&nbsp;&nbsp;&nbsp;&nbsp; S T A R T
+          </button>
         </div>
-    </div>
+      </div>
 
       <div className="headline">
         <h1>Let's Explore, Experiment and Discover !</h1>
@@ -170,7 +176,7 @@ const Home = () => {
       <div className="para">
         <p>The Virtual Labs Engineering, Architecture, and Design (VLEAD) Team at IIIT Hyderabad optimizes Virtual Labs operations, including infrastructure management, system administration, user interface design, process coordination, analytics, automation, performance, security enhancements, content authoring tool development, and technology research. Their efforts ensure efficiency and a seamless learning experience.</p>
       </div>
-      
+
       <div className="learning-spheres" ref={containerRef}>
         <h2>Learning Spheres</h2>
         <div className="card-container" ref={sliderRef}>
@@ -229,13 +235,13 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
+
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-section">
             <h4>Address</h4>
             <p>
-            Engineering and Architecture Division :
+              Engineering and Architecture Division : :
               <br />
               Room No:B5-203, Vindhya C6, VLEAD, IIIT-H,
               <br />
@@ -246,7 +252,7 @@ const Home = () => {
           <div className="footer-section">
             <h4>Contact</h4>
             <p>
-            General Information : 011-64674687
+              General Information : 011-6467468787
               <br />
               Development/Outreach : +91-9177792945
               <br />
@@ -258,16 +264,16 @@ const Home = () => {
             <h4>Follow Us</h4>
             <div className="social-icons">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-instagram"></i>
+                <FaInstagram />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin"></i>
+                <FaLinkedin />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-twitter"></i>
+                <FaTwitter />
               </a>
               <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-github"></i>
+                <FaGithub />
               </a>
             </div>
           </div>
@@ -277,9 +283,11 @@ const Home = () => {
       <div className="copyright">
         <p>© 2024 Virtual Labs IIT Hyderabad. All Rights Reserved.</p>
       </div>
+      <button className="dark-mode-toggle" onClick={toggleDarkMode}>
+        {darkMode ? 'Light Mode' : 'Dark Mode'}
+      </button>
     </div>
-    
   );
 };
 
-export default Home; 
+export default Home;
