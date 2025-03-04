@@ -11,6 +11,9 @@
   font-size: 2.5rem;
   margin-top: 100px;
   /* Reduced margin-top */
+  font-family: "poppins";
+  font-weight: 700;
+  letter-spacing: -1px;
   margin-bottom: 10px;
   /* Reduced margin-bottom */
   text-align: center;
@@ -59,7 +62,7 @@
 
 .stakeholder-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   /* 4 items per row */
   gap: 2rem;
   /* Increased gap */
